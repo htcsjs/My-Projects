@@ -330,3 +330,15 @@ i {
   width: 100px;
   height: 100px;
 }
+
+/*Collaborators*/
+#team {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+#team h2 {
+  font-size: 3rem;
+  text-align: center;
+  max-width: 1000px;
+}
