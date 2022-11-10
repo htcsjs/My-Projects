@@ -18,6 +18,7 @@
 
 a {
   text-decoration: none;
+  color: var(--primary-text-color);
 }
 
 img {
@@ -58,7 +59,7 @@ i {
   justify-content: space-between;
 }
 
-#brand {
+.brand {
   background-color: var(--main-color);
   padding: 1rem;
 }
@@ -343,13 +344,163 @@ i {
   max-width: 1000px;
   margin: 0 auto;
   position: relative;
+  z-index: 2;
 }
 
-#team.square {
+#team .square {
   background-color: var(--tertiary-color);
   width: 100px;
   height: 100px;
   left: 50%;
   margin-left: -50px;
   top: -25px;
+}
+
+.employees {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.employee-name {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: .5rem 0;
+  color: var(--main-color);
+}
+
+/*Contact*/
+#contact {
+  background-color: var(--main-color);
+  gap: 0;
+  padding-bottom: 5rem;
+}
+
+#contact-information {
+  position: relative;
+  text-align: left;
+  padding: 3rem;
+  flex: 1 1 0;
+}
+
+#contact-information .section-subtitle {
+  color: var(--primary-text-color);
+}
+
+#contact-information i {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: var(--primary-text-color);
+  color: var(--main-color);
+}
+
+#contact-information form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#contact-information .form-control {
+  display: flex;
+  gap: 1rem;
+}
+
+#contact-information input,
+#contact-information textarea {
+  padding: 1rem;
+  flex: .5;
+  border: none;
+}
+
+#contact-information .btn {
+  align-self: start;
+  border: 2px solid var(--primary-text-color);
+  font-size: 1.2rem;
+}
+
+#contact-information .btn:hover {
+  background-color: var(--primary-text-color);
+  color: var(--main-color);
+  transition: 300ms;
+}
+
+/*Footer*/
+
+#footer {
+  display: flex;
+  background-color: var(--secondary-bg-color);
+  color: var(--primary-text-color);
+  justify-content: space-around;
+  padding: 3rem 3rem 5rem;
+}
+
+#footer-brand {
+  margin-bottom: 2rem;
+}
+
+#footer-brand h2 {
+  margin-bottom: 0.5rem;
+}
+
+#contact-container,
+.links-container {
+  width: 20%;
+}
+
+#footer p {
+  margin-bottom: 1rem;
+}
+
+.links-container h4 {
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+}
+
+.links-container p {
+  border-bottom: 1px solid var(--secondary-color);
+  padding-bottom: 1rem;
+}
+
+.links-container i {
+  padding: 0;
+  background-color: transparent;
+  font-size: 1rem;
+}
+
+#contact-container p i {
+  background-color: transparent;
+  padding: .4rem;
+  color: var(--main-color);
+  font-size: 1rem;
+}
+
+#socials {
+  display: flex;
+  justify-content: space-between;
+}
+
+#socials i {
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+#phone-number {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--main-color);
+  margin-bottom: 1rem;
+}
+
+#phone-number i {
+  padding: .4rem;
+  margin-right: 1rem;
+  background-color: var(--main-color);
+}
+
+#phone-info {
+  border: none;
+  color: var(--secondary-color);
 }

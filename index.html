@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
 
 <head>
   <meta charset="UTF-8">
@@ -22,7 +22,7 @@
 <body>
   <header id="header">
     <div id="inner-header">
-      <h2 id="brand">Pearson Hardman</h2>
+      <h2 class="brand">Pearson Hardman</h2>
       <nav id="navbar-nav">
         <ul id="navbar">
           <a href="#">ínicio</a>
@@ -187,10 +187,13 @@
     </div>
   </section>
   <!--Collaborators-->
-  <section id="team ">
+  <section id="team">
     <span class="square"></span>
-    <h2>A <span>Pearson Hardman</span> tem um time de especialistas a sua disposição</h2>
-    <div class="employess">
+    <h2>
+      A <span>Pearson Hardman</span> tem um time de especialistas a sua
+      disposição
+    </h2>
+    <div class="employees">
       <div class="employee">
         <img src="img/mike.jpg" alt="Mike Ross">
         <p class="employee-name">Mike Ross</p>
@@ -213,6 +216,66 @@
       </div>
     </div>
   </section>
+  <!--Contacts-->
+  <section id="contact" class="text-image-section">
+    <div id="contact-image-container" class="image-container">
+      <img src="img/office.jpg" alt="Advogados em escritório">
+    </div>
+    <div id="contact-information" class="text-container">
+      <i class="bi bi-envelope"></i>
+      <p class="section-subtitle">Entre em contato</p>
+      <form>
+        <div class="form-control">
+          <input type="text" name="name" id="name" placeholder="Nome">
+          <input type="email" name="email" id="email" placeholder="E-mail">
+        </div>
+        <input type="text" name="phone" id="phone" placeholder="Telefone">
+        <textarea name="message" id="message" placeholder="Sua mensagem..."></textarea>
+        <input type="submit" value="Enviar" class="btn">
+      </form>
+    </div>
+  </section>
+  <!--Footer!!!!-->
+  <footer id="footer">
+    <div id="contact-container">
+      <div id="footer-brand">
+        <h2 class="brand">Pearson Hardman</h2>
+        <p>O advogado certo para a sua empresa</p>
+      </div>
+      <p><i class="bi bi-geo-alt"></i>Rua dos Advogados, 1415</p>
+      <p><i class="bi bi-telephone"></i>(99) 9999-9999</p>
+      <p><i class="bi bi-envelope"></i>contato@pearsonhardman.com</p>
+      <p>Siga-nos:</p>
+      <div id="socials">
+        <i class="bi bi-facebook"></i>
+        <i class="bi bi-twitter"></i>
+        <i class="bi bi-linkedin"></i>
+        <i class="bi bi-instagram"></i>
+      </div>
+    </div>
+    <div class="links-container">
+      <h4>Outros serviços</h4>
+      <p><a href="#">Propriedade intelectual</a></p>
+      <p><a href="#">LGPD</a></p>
+      <p><a href="#">Direito internacional</a></p>
+      <p><a href="#">Processos</a></p>
+    </div>
+    <div class="links-container">
+      <h4>Páginas</h4>
+      <p><a href="#">Termos e condições</a></p>
+      <p><a href="#">Política de privacidade</a></p>
+      <p><a href="#">Fale com um especialista</a></p>
+      <p><a href="#">FAQ</a></p>
+    </div>
+    <div class="links-container">
+      <h4>Consulta Grátis</h4>
+      <div id="phone-number">
+        <i class="bi bi-telephone"></i>
+        <span>(99) 9999-9999</span>
+      </div>
+      <p id="phone-info">Este telefone é especial para tratar de casos já em andamento</p>
+    </div>
+  </footer>
 </body>
 
 </html>
