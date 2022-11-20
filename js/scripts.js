@@ -17,7 +17,7 @@ window.addEventListener('resize', () => {
   width > 450 ? mobileMenu.style.display = 'none' : mobileMenu.style.display = 'flex'
 })
 
-// Seleção de elementos
+// Seleção de elementos//
 /*const menuBtn = document.querySelector("#menu");
 const closeMenuBtn = document.querySelector("#close-menu");
 const menu = document.querySelector("#mobile-navbar");
