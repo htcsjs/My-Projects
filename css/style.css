@@ -556,7 +556,7 @@ i {
   color: var(--secondary-color);
 }
 
-/*Responsive*/
+/*Mobile Styling*/
 @media (max-width: 450px) {
   #navbar {
     display: none;
