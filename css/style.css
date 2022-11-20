@@ -42,6 +42,49 @@ i {
 }
 
 /*Header and banner*/
+#offset-menu.active {
+  left: 0;
+}
+
+#offset-menu {
+  top: 0;
+  left: 100%;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 3;
+  background-color: rgba(0, 0, 0, 0.918);
+  flex-direction: column;
+  padding: 4rem 2rem;
+  text-align: center;
+  transition: 400ms;
+}
+
+#offset-menu a {
+  text-transform: capitalize;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid var(--main-color);
+  padding: 1rem;
+  font-size: 2rem;
+}
+
+.bi-x {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: .5rem;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+#offset-navbar a {
+  padding: 1rem 0;
+  text-align: center;
+  border-bottom: 1px solid var(--main-color);
+}
+
 #header {
   min-height: 90vh;
   background-image: url('../img/main_banner4.png');
@@ -67,6 +110,10 @@ i {
 #navbar-nav {
   display: flex;
   list-style: none;
+}
+
+#hamburguer {
+  display: none;
 }
 
 #navbar {
@@ -233,7 +280,7 @@ i {
   flex-direction: column;
   justify-content: center;
   gap: 2rem;
-  padding: 4rem 3 rem;
+  padding: 4rem 3rem;
 }
 
 #about-text .section-subtitle,
@@ -345,6 +392,10 @@ i {
   margin: 0 auto;
   position: relative;
   z-index: 2;
+}
+
+#team span {
+  color: var(--main-color);
 }
 
 #team .square {
@@ -503,4 +554,141 @@ i {
 #phone-info {
   border: none;
   color: var(--secondary-color);
+}
+
+/*Responsive*/
+@media (max-width: 450px) {
+  #navbar {
+    display: none;
+  }
+
+  #hamburguer {
+    display: block;
+    padding: 1rem;
+    cursor: pointer;
+  }
+
+  .banner {
+    max-width: 100%;
+    padding: 4rem 2rem;
+  }
+
+  .banner h2 {
+    font-size: 3rem;
+  }
+
+  .banner p {
+    font-size: 1rem;
+  }
+
+  .text-container {
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .btn,
+  #contact-information .btn {
+    align-self: initial;
+  }
+
+  i {
+    padding: 1.5rem;
+    font-size: 2rem;
+  }
+
+  #other-services {
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem;
+  }
+
+  #about-text,
+  #about-data {
+    flex: 1 1 100%;
+  }
+
+  #about-text i {
+    padding: 0;
+  }
+
+  .about-description {
+    gap: 1.5rem;
+  }
+
+  #about-data {
+    flex-direction: column;
+  }
+
+  #about-data .data {
+    width: 100%;
+    border-bottom: 1px solid var(--secondary-color);
+  }
+
+  #about-data .data:nth-child(1) {
+    border-right: none !important;
+  }
+
+  #about-data .data:nth-child(4) {
+    border-left: none !important;
+  }
+
+  .author {
+    flex-direction: column;
+  }
+
+  .employees {
+    flex-direction: column;
+  }
+
+  #team {
+    margin-top: 1rem;
+  }
+
+  #team h2 {
+    font-size: 2.5rem;
+  }
+
+  #team .square {
+    top: -10px;
+  }
+
+  #contact-information {
+    padding: 7rem 1rem;
+  }
+
+  #contact-information .form-control {
+    flex-direction: column;
+  }
+
+  #footer {
+    flex-wrap: wrap;
+  }
+
+  #footer-brand {
+    text-align: center;
+  }
+
+  #contact-container {
+    width: 100%;
+  }
+
+  #contact-container p i,
+  #socials i {
+    font-size: 2rem;
+    padding: 1rem;
+  }
+
+  .links-container {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .links-container h4 {
+    margin-bottom: 1rem;
+  }
+
+  #phone-number i {
+    font-size: 2rem;
+    padding: 1rem;
+  }
 }

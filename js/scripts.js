@@ -1,5 +1,24 @@
+const menuToggle = document.querySelector("#hamburguer");
+const mobileMenu = document.querySelector("#offset-menu")
+
+menuToggle.addEventListener('click', () => {
+  mobileMenu.classList.add("active")
+})
+
+const closeMenu = document.querySelector("#close-menu")
+
+closeMenu.addEventListener('click', () => {
+  mobileMenu.classList.remove("active")
+})
+
+window.addEventListener('resize', () => {
+  let width = window.innerWidth;
+
+  width > 450 ? mobileMenu.style.display = 'none' : mobileMenu.style.display = 'flex'
+})
+
 // Seleção de elementos
-const menuBtn = document.querySelector("#menu");
+/*const menuBtn = document.querySelector("#menu");
 const closeMenuBtn = document.querySelector("#close-menu");
 const menu = document.querySelector("#mobile-navbar");
 
@@ -61,3 +80,4 @@ allLinks.forEach((link) => {
 
 // Inicialização
 showSlides();
+*/
