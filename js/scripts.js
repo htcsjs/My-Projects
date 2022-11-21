@@ -17,67 +17,26 @@ window.addEventListener('resize', () => {
   width > 450 ? mobileMenu.style.display = 'none' : mobileMenu.style.display = 'flex'
 })
 
-// Seleção de elementos//
-/*const menuBtn = document.querySelector("#menu");
-const closeMenuBtn = document.querySelector("#close-menu");
-const menu = document.querySelector("#mobile-navbar");
+const banner = document.querySelectorAll('.banner')
+const dot = document.querySelectorAll('.dot')
+let slideIndex = 0
 
-const desktopLinks = document.querySelectorAll("#navbar a");
-const mobileLinks = document.querySelectorAll("#mobile-navbar a");
-const allLinks = [...desktopLinks, ...mobileLinks];
-
-const slides = document.querySelectorAll(".banner");
-const dots = document.querySelectorAll(".dot");
-let slideIndex = 0;
-
-// Funções
-function smoothScroll(e) {
-  e.preventDefault();
-
-  const href = this.getAttribute("href");
-  const offsetTop = document.querySelector(href).offsetTop;
-
-  scroll({
-    top: offsetTop,
-    behavior: "smooth",
-  });
-
-  setTimeout(() => {
-    if (menu.classList.contains("menu-active")) {
-      menu.classList.remove("menu-active");
-    }
-  }, 500);
-}
-
-function showSlides() {
-  for (let i = 0; i < slides.length; i++) {
-    slides[i].classList.remove("active");
-    dots[i].classList.remove("active");
+console.log(banner.length)
+function showSlide() {
+  for (let i = 0; i < banner.length; i++) {
+    banner[i].classList.remove("active");
+    dot[i].classList.remove("active");
   }
 
   slideIndex++;
 
-  if (slideIndex > slides.length) {
+  if (slideIndex > banner.length) {
     slideIndex = 1;
   }
 
-  slides[slideIndex - 1].classList.add("active");
-  dots[slideIndex - 1].classList.add("active");
+  banner[slideIndex - 1].classList.add("active");
+  dot[slideIndex - 1].classList.add("active");
 
-  setTimeout(showSlides, 3000);
+  setTimeout(showSlide, 3000);
 }
-
-// Eventos
-[menuBtn, closeMenuBtn].forEach((btn) => {
-  btn.addEventListener("click", (e) => {
-    menu.classList.toggle("menu-active");
-  });
-});
-
-allLinks.forEach((link) => {
-  link.addEventListener("click", smoothScroll);
-});
-
-// Inicialização
-showSlides();
-*/
+showSlide()
